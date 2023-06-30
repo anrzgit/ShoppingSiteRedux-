@@ -12,7 +12,8 @@ export const Cart = () => {
   return (
     <main>
       <section className="cart">
-        <h1>Cart Items: {products.length}</h1>
+        <h1 className="" >Cart Items: {products.length}</h1>
+        <h1>Price: {total}</h1>
         { products.map((product) => (
           <CartCard key={product.id} product={product} />
         )) }        
